@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project formulier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body class="row">
+    <main class="col-md-8"> <!-- DIV REGISTRATIE FORMULIER -->
+      <form class="row g-3" style="margin: 30px">
+        <h1>Registreer</h1>
+        <h6>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</h6>
+        
+        <!--  VOORNAAM -->
+        <div class="col-md-6">
+          <label for="voornaam">Voornaam</label>
+            <input type="text" class="form-control" id="voornaam" name="voornaam" placeholder="Uw voornaam" aria-label="Voornaam">
+        </div>
+
+        <!-- NAAM -->
+        <div class="col-md-6">
+          <label for="naam">Naam</label>
+            <input type="text" class="form-control" id="naam" name="naam" placeholder="Uw naam" aria-label="Naam">
+        </div>
+        
+        <!-- GEBRUIKERSNAAM -->
+        <div class="col-md-6">
+          <label for="gebruikersnaam">Gebruikersnaam</label>
+           <div class="input-group mb-3">  <!-- deze div zorgt er voor dat  de span binnen get tekt veld valt -->
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="gebruikersnaam" name="gebruikersnaam" placeholder="u911236" aria-label="Gebruikersnaam">
+          </div>
+        </div>
+
+          <!-- EMAIL -->
+        <div class="col-md-6">
+          <label for="email">E-mailadres</label>
+          <input type="email" class="form-control" id="email" placeholder="mail@example.be" aria-label="E-mail"> 
+        </div>
+
+        <!-- WACHTWOORD -->
+        <div class="col-md-6">
+          <label for="wachtwoord" >Wachtwoord</label>
+          <input type="password" class="form-control" id="wachtwoord">
+        </div>
+
+        <!-- HERHAAL WACHTWOORD -->
+        <div class="col-md-6">
+          <label for="herhaalwachtwoord"> Herhaal wachtwoord</label>
+          <input type="password"  class="form-control" id="herhaalwachtwoord">
+        </div>
+        <div class="col-md-6">
+          <span class="form-text">je wachtwoord moet minstens  8 tekens lang zijn</span>
+        </div>
+
+        <!-- ADRES -->
+        <div class="col-md-12">
+        <label for="adres">Adres</label>
+        <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer" aria-label="Studierichting">
+        </div>
+
+        <!-- LAND, PROVINTIE, POSTCODE -->
+        <!-- LAND -->
+        <div class="col-md-5" >
+          <label for="land">Land</label>
+          <select class="form-select" id="land">
+            <option selected>kies een Land</option>
+            <option value="Argentinië">Argentinië</option>
+            <option value="Australië">Australië</option>
+            <option value="België">België</option>
+            <option value="Brazilië">Brazilië</option>
+            <option value="Canada">Canada</option>
+            <option value="Chili">Chili</option>
+            <option value="China">China</option>
+            <option value="Duitsland">Duitsland</option>
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="India">India</option>
+            <option value="Italië">Italië</option>
+            <option value="Japan">Japan</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Nederland">Nederland</option>
+            <option value="Nieuw-Zeeland">Nieuw-Zeeland</option>
+            <option value="Spanje">Spanje</option>
+            <option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option>
+            <option value="Verenigde Staten">Verenigde Staten</option>
+            <option value="Zuid-Afrika">Zuid-Afrika</option>
+            <option value="Zuid-Korea">Zuid-Korea</option>
+          </select>
+        </div>
+        <!-- PROVINTIE -->
+        <div class="col-md-4" >
+          <label>Provincie</label>
+          <select class="form-select" id="provincie">
+            <option selected>kies een provincie</option>
+            <!-- argentinie -->
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Rosario">Rosario</option>
+            <option value="La Plata">La Plata</option>
+            <option value="Mar del Plata">Mar del Plata</option>
+            <option value="Salta">Salta</option>
+            <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Bahía Blanca">Bahía Blanca</option>
+            <!-- australië -->
+            <option value="Sydney">Sydney</option>
+            <option value="Melbourne">Melbourne</option>
+            <option value="Brisbane">Brisbane</option>
+            <option value="Perth">Perth</option>
+            <option value="Adelaide">Adelaide</option>
+            <option value="Gold Coast">Gold Coast</option>
+            <option value="Canberra">Canberra</option>
+            <option value="Newcastle">Newcastle</option>
+            <option value="Wollongong">Wollongong</option>
+            <option value="Hobart">Hobart</option>
+            <!-- belgië -->
+            <option value="Brussel">Brussel</option>
+            <option value="Antwerpen">Antwerpen</option>
+            <option value="Gent">Gent</option>
+            <option value="Charleroi">Charleroi</option>
+            <option value="Luik">Luik</option>
+            <option value="Brugge">Brugge</option>
+            <option value="Namen">Namen</option>
+            <option value="Leuven">Leuven</option>
+            <option value="Mechelen">Mechelen</option>
+            <option value="Kortrijk">Kortrijk</option>
+            <!-- Brazilië -->
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Brasília">Brasília</option>
+            <option value="Fortaleza">Fortaleza</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Manaus">Manaus</option>
+            <option value="Curitiba">Curitiba</option>
+            <option value="Recife">Recife</option>
+            <option value="Porto Alegre">Porto Alegre</option>
+            <!-- canada -->
+            <option value="Toronto">Toronto</option>
+            <option value="Montréal">Montréal</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="Calgary">Calgary</option>
+            <option value="Ottawa">Ottawa</option>
+            <option value="Edmonton">Edmonton</option>
+            <option value="Québec">Québec</option>
+            <option value="Winnipeg">Winnipeg</option>
+            <option value="Hamilton">Hamilton</option>
+            <option value="London">London</option>
+            <!-- chili -->
+            <option value="Santiago">Santiago</option>
+            <option value="Concepción">Concepción</option>
+            <option value="Valparaíso">Valparaíso</option>
+            <option value="La Serena">La Serena</option>
+            <option value="Antofagasta">Antofagasta</option>
+            <option value="Temuco">Temuco</option>
+            <option value="Iquique">Iquique</option>
+            <option value="Rancagua">Rancagua</option>
+            <option value="Talca">Talca</option>
+            <option value="Puerto Montt">Puerto Montt</option>
+            <!-- china -->
+            <option value="Shanghai">Shanghai</option>
+            <option value="Beijing">Beijing (Peking)</option>
+            <option value="Tianjin">Tianjin</option>
+            <option value="Guangzhou">Guangzhou</option>
+            <option value="Shenzhen">Shenzhen</option>
+            <option value="Wuhan">Wuhan</option>
+            <option value="Chengdu">Chengdu</option>
+            <option value="Chongqing">Chongqing</option>
+            <option value="Nanjing">Nanjing</option>
+            <option value="Xi'an">Xi'an</option>
+            <!-- frankrijk -->
+            <option value="Parijs">Parijs</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Toulouse">Toulouse</option>
+            <option value="Nice">Nice</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Straatsburg">Straatsburg</option>
+            <option value="Montpellier">Montpellier</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Lille">Lille</option>
+            <!-- india -->
+            <option value="Mumbai">Mumbai (Bombay)</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Chennai">Chennai (Madras)</option>
+            <option value="Kolkata">Kolkata (Calcutta)</option>
+            <option value="Pune">Pune</option>
+            <option value="Surat">Surat</option>
+            <option value="Jaipur">Jaipur</option>
+            <!-- italie -->
+            <option value="Rome">Rome</option>
+            <option value="Milaan">Milaan</option>
+            <option value="Napels">Napels</option>
+            <option value="Turijn">Turijn</option>
+            <option value="Palermo">Palermo</option>
+            <option value="Genua">Genua</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Florence">Florence</option>
+            <option value="Bari">Bari</option>
+            <option value="Catania">Catania</option>
+            <!-- japan -->
+            <option value="Tokyo">Tokyo</option>
+            <option value="Yokohama">Yokohama</option>
+            <option value="Osaka">Osaka</option>
+            <option value="Nagoya">Nagoya</option>
+            <option value="Sapporo">Sapporo</option>
+            <option value="Kobe">Kobe</option>
+            <option value="Kyoto">Kyoto</option>
+            <option value="Fukuoka">Fukuoka</option>
+            <option value="Kawasaki">Kawasaki</option>
+            <option value="Hiroshima">Hiroshima</option>
+            <!-- mexico -->
+            <option value="Mexico-Stad">Mexico-Stad</option>
+            <option value="Ecatepec">Ecatepec</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Juárez">Juárez</option>
+            <option value="Tijuana">Tijuana</option>
+            <option value="León">León</option>
+            <option value="Zapopan">Zapopan</option>
+            <option value="Monterrey">Monterrey</option>
+            <option value="Nezahualcóyotl">Nezahualcóyotl</option>
+            <!-- nederland -->
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Rotterdam">Rotterdam</option>
+            <option value="Den Haag">Den Haag</option>
+            <option value="Utrecht">Utrecht</option>
+            <option value="Eindhoven">Eindhoven</option>
+            <option value="Tilburg">Tilburg</option>
+            <option value="Groningen">Groningen</option>
+            <option value="Almere">Almere</option>
+            <option value="Breda">Breda</option>
+            <option value="Nijmegen">Nijmegen</option>
+            <!-- Nieuw-Zeeland -->
+            <option value="Auckland">Auckland</option>
+            <option value="Wellington">Wellington</option>
+            <option value="Christchurch">Christchurch</option>
+            <option value="Hamilton">Hamilton</option>
+            <option value="Tauranga">Tauranga</option>
+            <option value="Napier-Hastings">Napier-Hastings</option>
+            <option value="Dunedin">Dunedin</option>
+            <option value="Palmerston North">Palmerston North</option>
+            <option value="Nelson">Nelson</option>
+            <option value="Rotorua">Rotorua</option>
+            <!-- spanje -->
+            <option value="Madrid">Madrid</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Zaragoza">Zaragoza</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Murcia">Murcia</option>
+            <option value="Palma de Mallorca">Palma de Mallorca</option>
+            <option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+            <option value="Bilbao">Bilbao</option>
+            <!--  Verenigd Koninkrijk -->
+            <option value="Londen">Londen</option>
+            <option value="Manchester">Manchester</option>
+            <option value="Birmingham">Birmingham</option>
+            <option value="Glasgow">Glasgow</option>
+            <option value="Liverpool">Liverpool</option>
+            <option value="Bristol">Bristol</option>
+            <option value="Leeds">Leeds</option>
+            <option value="Newcastle upon Tyne">Newcastle upon Tyne</option>
+            <option value="Sheffield">Sheffield</option>
+            <option value="Edinburgh">Edinburgh</option>
+            <!-- Verenigde Staten -->
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Houston">Houston</option>
+            <option value="Phoenix">Phoenix</option>
+            <option value="Philadelphia">Philadelphia</option>
+            <option value="San Antonio">San Antonio</option>
+            <option value="San Diego">San Diego</option>
+            <option value="Dallas">Dallas</option>
+            <option value="San Jose">San Jose</option>
+            <!-- Zuid-Afrika -->
+            <option value="Johannesburg">Johannesburg</option>
+            <option value="Cape Town">Cape Town</option>
+            <option value="Durban">Durban</option>
+            <option value="Pretoria">Pretoria</option>
+            <option value="Port Elizabeth">Port Elizabeth</option>
+            <option value="Bloemfontein">Bloemfontein</option>
+            <option value="East London">East London</option>
+            <option value="Nelspruit">Nelspruit</option>
+            <option value="Kimberley">Kimberley</option>
+            <option value="Pietermaritzburg">Pietermaritzburg</option>
+            <!-- Zuid-Korea -->
+            <option value="Seoul">Seoul</option>
+            <option value="Busan">Busan</option>
+            <option value="Incheon">Incheon</option>
+            <option value="Daegu">Daegu</option>
+            <option value="Daejeon">Daejeon</option>
+            <option value="Gwangju">Gwangju</option>
+            <option value="Ulsan">Ulsan</option>
+            <option value="Sejong">Sejong</option>
+            <option value="Jeonju">Jeonju</option>
+            <option value="Jeju">Jeju</option>
+          </select>
+        </div>
+        <!-- POSTCODE -->
+        <div class="col-md-3">
+          <label>postcode</label>
+          <select class="form-select" id="postcode">
+            <option></option>
+            <option>1000</option>
+            <option>1100</option>
+            <option>1200</option>
+            <option>1300</option>
+            <option>1400</option>
+            <option>1500</option>
+            <option>1600</option>
+            <option>1700</option>
+            <option>1800</option>
+            <option>1900</option>
+            <option>2000</option>
+            <option>2100</option>
+            <option>2200</option>
+            <option>2300</option>
+            <option>2400</option>
+            <option>2500</option>
+            <option>2600</option>
+            <option>2700</option>
+            <option>2800</option>
+            <option>2900</option>
+            <option>3000</option>
+            <option>3100</option>
+            <option>3200</option>
+            <option>3300</option>
+            <option>3400</option>
+            <option>3500</option>
+            <option>3600</option>
+            <option>3700</option>
+            <option>3800</option>
+            <option>3900</option>
+            <option>4000</option>
+            <option>4100</option>
+            <option>4200</option>
+            <option>4300</option>
+            <option>4400</option>
+            <option>4500</option>
+            <option>4600</option>
+            <option>4700</option>
+            <option>4800</option>
+            <option>4900</option>
+            <option>5000</option>
+            <option>5100</option>
+            <option>5200</option>
+            <option>5300</option>
+            <option>5400</option>
+            <option>5500</option>
+            <option>5600</option>
+            <option>5700</option>
+            <option>5800</option>
+            <option>5900</option>
+            <option>6000</option>
+            <option>6100</option>
+            <option>6200</option>
+            <option>6300</option>
+            <option>6400</option>
+            <option>6500</option>
+            <option>6600</option>
+            <option>6700</option>
+            <option>6800</option>
+            <option>6900</option>
+            <option>7000</option>
+            <option>7100</option>
+            <option>7200</option>
+            <option>7300</option>
+            <option>7400</option>
+            <option>7500</option>
+            <option>7600</option>
+            <option>7700</option>
+            <option>7800</option>
+            <option>7900</option>
+            <option>8000</option>
+            <option>8100</option>
+            <option>8200</option>
+            <option>8300</option>
+            <option>8400</option>
+            <option>8500</option>
+            <option>8600</option>
+            <option>8700</option>
+            <option>8800</option>
+            <option>8900</option>
+            <option>9000</option>
+            <option>9100</option>
+            <option>9200</option>
+            <option>9300</option>
+            <option>9400</option>
+            <option>9500</option>
+            <option>9600</option>
+            <option>9700</option>
+            <option>9800</option>
+            <option>9900</option>
+            <option>9999</option>
+          </select>
+        </div>
+
+        <!-- LIJN -->
+        <hr>
+
+        <!--  DIV HOU ME OP DE HOOGTE -->
+        <div class="col-md-7">
+          <h4>Hou me op de hoogte</h4>
+          <!-- NIEUWSBRIEF -->
+          <div class="col-md-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="nieuwsbrief" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Inschrijven voor onze nieuwsbrief
+                </label>
+            </div>
+        </div>
+        <!-- ALGEMEENE VOORWAARDEN-->
+        <div class="col-md-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="algemenev" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Ik ga akkoord met de algemeene voorwaarden.
+                </label>
+            </div>
+        </div>
+        </div>
+
+        <!--  DIV BETALING -->
+        <div class="col-md-3">
+          <h4>Betaling</h4>
+            <!-- BANK APP -->
+          <div class="form-check">
+            <input class="form-check-input"  id="validatePayment" type="radio" name="flexRadioDefault" value ="banking app" checked >
+            <label>Banking app</label>
+          </div>
+          <!-- OVERSCHRIJVING-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="overschrijving">
+            <label>Overschrijving</label>
+          </div>
+          <!-- VISA CARD-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="visa card">
+            <label>Visa card</label>
+          </div>
+          <!-- PAYPAL -->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="paypal">
+            <label>PayPal</label>
+          </div>
+        </div>
+
+        <!-- LIJN -->
+        <hr>
+
+        <!-- BUTTON -->
+        <!-- WAVE YOUR MAGIC WAND -->
+        <div class="d-grid gap-2">
+          <button id="button"  class="btn btn-primary" type="button" onclick = "validateForm" >Wave your magic wand</button>
+        </div>
+      </form>
+    </main>
+
+    <!--dit is de div voor de melding goed of fout -->
+    <aside class="col-md-4 ">  
+      <!-- berrorlijstdiv -->
+      <div id="errorlijstdiv" class="p-3 bg-danger-subtle text-danger">
+        <h4>Yikes, errors..</h4>
+        <p id="errorlijst"></p>
+      </div>
+      <!-- goedgedaandiv -->
+      <div id="goedgedaandiv" class="p-3 bg-success-subtle text-success" >
+        <h4>Goed gedaan!</h4>
+        <p>Aww yeah, je werd geregistreerd.</p>
+      </div>
+      <!-- betalingsdiv -->
+      <div id="betalingsdiv" class="p-3 bg-primary-subtle text-primary" >
+        <h4>Betalingswijze</h4>
+        <p id="Betalingswijze"></p>
+      </div>
+    </aside>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!-- inspitatie via https://www.youtube.com/watch?v=0dNMIimK9fw -->

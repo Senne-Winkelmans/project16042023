@@ -1,0 +1,20 @@
+#errorlijstdiv {
+display: none;
+margin-top: 155px;
+border-radius: 5px;
+width: 90%;
+}
+
+#goedgedaandiv {
+    display: none;
+    margin-top: 155px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#betalingsdiv {
+    display: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 90%;
+}
